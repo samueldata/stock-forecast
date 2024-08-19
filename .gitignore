@@ -1,0 +1,24 @@
+*.csv
+*.log
+*.pkl
+__pycache__/
+.ipynb_checkpoints/
+
+# Ambiente Virtual
+venv/
+.venv/
+
+# Arquivos Temporários e de Sistema
+*.tmp
+*.swp
+*.swo
+.DS_Store
+
+# Arquivos de Configuração do IDE
+.vscode/
+.idea/
+
+# Arquivos de Build e Distribuição
+build/
+dist/
+*.egg-info/

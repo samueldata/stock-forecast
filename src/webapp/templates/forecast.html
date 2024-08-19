@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Previsão de Ações para {{ stock }}</h1>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Gráfico de Previsão</h5>
+                <div>{{ plot | safe }}</div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Exploração de Dados</h5>
+                
+                <h6>Primeiras Linhas:</h6>
+                {{ summary.head | safe }}
+
+                <h6>Estatísticas Descritivas:</h6>
+                {{ summary.describe | safe }}
+
+                <h6>Dados Ausentes:</h6>
+                {{ summary.missing | safe }}
+            </div>
+        </div>
+
+        <a href="/" class="btn btn-primary mt-4">Voltar</a>
+    </div>
+</body>
+</html>

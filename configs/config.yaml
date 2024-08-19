@@ -1,0 +1,15 @@
+# Configuration file for Stock Forecast Project
+database:
+  host: localhost
+  port: 5432
+  name: stock_forecast
+  user: your_username
+  password: your_password
+
+logging:
+  level: INFO
+  file: /path/to/logfile.log
+
+api:
+  key: your_api_key
+  endpoint: https://api.example.com
