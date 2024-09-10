@@ -1,5 +1,11 @@
 # Stock Forecast Application
 
+# Stock Forecast
+
+![License: MIT](https://img.shields.io/github/license/samueldata/stock-forecast)   ![Python Version](https://img.shields.io/badge/python-3.9.7-blue)   ![Last Commit](https://img.shields.io/github/last-commit/samueldata/stock-forecast)   ![GitHub issues](https://img.shields.io/github/issues/samueldata/stock-forecast)   ![Repo Size](https://img.shields.io/github/repo-size/samueldata/stock-forecast)   ![GitHub forks](https://img.shields.io/github/forks/samueldata/stock-forecast?style=social)   ![GitHub stars](https://img.shields.io/github/stars/samueldata/stock-forecast?style=social)
+
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen) 
+
 ## Objective
 
 The Stock Forecast project is a web application developed to analyze and predict the future behavior of stock prices using historical data. The application uses the `Prophet` library to create forecasting models and the `Plotly` library to generate interactive charts.
@@ -34,23 +40,25 @@ Make sure you have `Python` and `pip` installed. You will also need a virtual en
 1. **Clone the Repository**
 
    ```sh
-   git clone <REPOSITORY_URL>
+   git clone https://github.com/samueldata/stock-forecast.git
    cd stock-forecast
    ```
 
 2. **Create and Activate a Virtual Environment**
-   
+
    ```sh
    python -m venv venv
    source venv/bin/activate  # For Windows use: venv\Scripts\activate
    ```
 
 3. **Install Dependencies**
+
    ```sh
    pip install -r requirements.txt
    ```
 
 4. **Start the Application**
+
    ```sh
    python main.py
    ```
