@@ -1,8 +1,12 @@
+# Arquivos de Dados
 *.csv
 *.log
 *.pkl
+
+# Cache do Python
 __pycache__/
-.ipynb_checkpoints/
+*.pyc
+*.pyo
 
 # Ambiente Virtual
 venv/
@@ -13,6 +17,7 @@ venv/
 *.swp
 *.swo
 .DS_Store
+Thumbs.db
 
 # Arquivos de Configuração do IDE
 .vscode/
@@ -23,5 +28,8 @@ build/
 dist/
 *.egg-info/
 
-# Ignorar arquivos de resultados
+# Ignorar Arquivos de Resultados
 /results/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
