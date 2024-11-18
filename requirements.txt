@@ -1,9 +1,0 @@
-﻿yfinance==0.2.26
-pandas==2.2.2
-prophet==1.1.0
-plotly==5.15.0
-requests==2.32.3
-Flask==2.3.0
-pytest==8.3.3
-pytest-cov==3.0.0
-holidays==0.60
