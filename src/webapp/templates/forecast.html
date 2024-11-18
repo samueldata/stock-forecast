@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forecast Result</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="container mt-5">
@@ -34,5 +35,15 @@
 
         <a href="/" class="btn btn-primary mt-4">Voltar</a>
     </div>
+    <button class="toggle-button" onclick="toggleMode()">Toggle Mode</button>
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+        }
+
+        // Definir o modo inicial
+        document.body.classList.add('light-mode');
+    </script>
 </body>
 </html>
