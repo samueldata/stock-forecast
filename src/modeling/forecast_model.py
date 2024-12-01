@@ -4,7 +4,7 @@ import yfinance as yf
 from prophet import Prophet
 import plotly.graph_objects as go
 import sys
-import pytest
+from holidays.countries import Turkey
 
 # Definir diretório raiz do projeto
 root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
