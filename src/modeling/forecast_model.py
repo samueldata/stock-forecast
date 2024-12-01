@@ -4,6 +4,7 @@ import yfinance as yf
 from prophet import Prophet
 import plotly.graph_objects as go
 import sys
+import pytest
 
 # Definir diretório raiz do projeto
 root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -52,6 +53,14 @@ def forecast_stock(data, symbol):
     fig_path = os.path.join(results_dir, f'{symbol}_forecast_plot.html')
     fig.write_html(fig_path)
     print(f'Gráfico interativo salvo em {fig_path}')
+
+# Função para criar o modelo de previsão
+def create_forecast_model(data):
+    model = Prophet()
+    model.fit(data)
+    future = model.make_future_dataframe(periods=365)
+    forecast = model.predict(future)
+    return model, forecast
 
 if __name__ == "__main__":
     # Receber o símbolo da ação como argumento
