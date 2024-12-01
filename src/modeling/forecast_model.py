@@ -4,7 +4,7 @@ import yfinance as yf
 from prophet import Prophet
 import plotly.graph_objects as go
 import sys
-from holidays.countries import Turkey  # Corrigido aqui
+from holidays.countries import Turkey 
 
 # Definir diretório raiz do projeto
 root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -49,7 +49,7 @@ def forecast_stock(data, symbol):
     
     # Salvar gráfico interativo
     results_dir = os.path.join(root_dir, 'results')
-    os.makedirs(results_dir, existindo=True)  # Cria o diretório se não existir
+    os.makedirs(results_dir, exist_ok=True)  # Corrigido para 'exist_ok'
     fig_path = os.path.join(results_dir, f'{symbol}_forecast_plot.html')
     fig.write_html(fig_path)
     print(f'Gráfico interativo salvo em {fig_path}')
