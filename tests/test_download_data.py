@@ -1,5 +1,11 @@
+import sys
 import os
-from src.data.download_data import download_and_save_data
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+from data.download_data import download_and_save_data
+
+# import os
+# from src.data.download_data import download_and_save_data
 
 def test_download_and_save_data():
     ticker = "PETR4"  # Exemplo de ticker

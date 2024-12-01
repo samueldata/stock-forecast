@@ -1,3 +1,9 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+from modeling.forecast_model import create_forecast_model
+
 from src.modeling.forecast_model import create_forecast_model
 import pandas as pd
 

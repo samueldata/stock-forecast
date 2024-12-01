@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from src.modeling.forecast_model import create_forecast_model
+from modeling.forecast_model import create_forecast_model
 
 def test_create_forecast_model():
     # Dados simulados
